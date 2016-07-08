@@ -1,6 +1,6 @@
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
+# H1 heading
+## H2 heading
+###### H6 heading
 
 
 *This* is important.
