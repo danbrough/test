@@ -1,4 +1,5 @@
 import org.danbrough.xtras.xtrasDir
+import org.danbrough.xtras.xtrasMavenDir
 
 plugins {
   alias(libs.plugins.xtras) apply false
@@ -17,12 +18,15 @@ plugins {
 val projectGroup = project.property("project.group").toString()
 val projectVersion = project.property("project.version").toString()
 
-allprojects {
-  group = projectGroup
-  version = projectVersion
-}
+
+group = projectGroup
+version = projectVersion
+
 
 subprojects {
+  group = projectGroup
+  version = projectVersion
+
   pluginManager.apply("maven-publish")
   extensions.findByType<PublishingExtension>()?.apply {
     repositories {
@@ -33,6 +37,10 @@ subprojects {
           username = System.getenv("USERNAME")
           password = System.getenv("TOKEN")
         }
+      }
+
+      maven(xtrasMavenDir){
+        name = "Xtras"
       }
     }
   }
