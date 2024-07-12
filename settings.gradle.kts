@@ -31,5 +31,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Github Demo Project"
 
-include(":lib")
+include(":testlib")
 
