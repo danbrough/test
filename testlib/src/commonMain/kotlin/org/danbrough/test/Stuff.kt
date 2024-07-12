@@ -1,5 +1,5 @@
 package org.danbrough.test
 
 class Stuff {
-  val message = "Hello World"
+  val message = "Hello World Version2"
 }
