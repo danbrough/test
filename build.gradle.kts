@@ -1,3 +1,5 @@
+import org.danbrough.xtras.xtrasDir
+
 plugins {
   alias(libs.plugins.xtras) apply false
   alias(libs.plugins.kotlin.multiplatform) apply false
@@ -36,3 +38,8 @@ subprojects {
   }
 }
 
+tasks.register("thang"){
+  doFirst {
+    println("XTRAS.dir = $xtrasDir")
+  }
+}
