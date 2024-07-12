@@ -26,7 +26,7 @@ subprojects {
   pluginManager.apply("maven-publish")
   extensions.findByType<PublishingExtension>()?.apply {
     repositories {
-      maven("https://maven.pkg.github.com/danbrough/klog") {
+      maven("https://maven.pkg.github.com/danbrough/test") {
         name = "GitHubPackages"
 
         credentials {
