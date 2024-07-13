@@ -23,8 +23,6 @@ compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "
 [versions]
 
 compose = "1.7.0-beta02"
-##   ⬆ = "1.7.0-beta03"
-##   ⬆ = "1.7.0-beta04"
 compose-plugin = "1.6.11"
 ##          ⬆ = "1.6.20-dev1646"
 ##          ⬆ = "1.6.20-dev1663"
@@ -33,39 +31,24 @@ compose-plugin = "1.6.11"
 ##          ⬆ = "1.7.0-dev1686"
 ##          ⬆ = "1.7.0-dev1698"
 ##          ⬆ = "1.7.0-dev1703"
+##          ⬆ = "1.7.0-dev1721"
+##          ⬆ = "1.7.0-dev1727"
+##          ⬆ = "1.7.0-alpha01"
 compose-navigation = "2.8.0-beta02"
 android-minSdk = "24"
 android-compileSdk = "34"
 android-targetSdk = "34"
 androidx-activityCompose = "1.9.0"
-##                    ⬆ = "1.10.0-alpha01"
 androidx-core-ktx = "1.13.1"
-##             ⬆ = "1.14.0-alpha01"
-##             ⬆ = "1.15.0-alpha01"
 androidx-appcompat = "1.7.0"
 androidx-material = "1.12.0"
 androidx-constraintlayout = "2.1.4"
 androidx-test-junit = "1.1.5"
-##               ⬆ = "1.2.0-alpha01"
-##               ⬆ = "1.2.0-alpha02"
-##               ⬆ = "1.2.0-alpha03"
-##               ⬆ = "1.2.0-alpha04"
-##               ⬆ = "1.2.0-beta01"
-##               ⬆ = "1.2.0-rc01"
-##               ⬆ = "1.2.0"
-##               ⬆ = "1.2.1"
 androidx-espresso-core = "3.5.1"
-##                  ⬆ = "3.6.0-alpha01"
-##                  ⬆ = "3.6.0-alpha02"
-##                  ⬆ = "3.6.0-alpha03"
-##                  ⬆ = "3.6.0-alpha04"
-##                  ⬆ = "3.6.0-beta01"
-##                  ⬆ = "3.6.0-rc01"
-##                  ⬆ = "3.6.0"
-##                  ⬆ = "3.6.1"
 decompose = "3.0.0"
 
 agp ="8.5.0"
+##⬆= "8.5.1"
 ##⬆= "8.6.0-alpha01"
 ##⬆= "8.6.0-alpha02"
 ##⬆= "8.6.0-alpha03"
@@ -74,9 +57,12 @@ agp ="8.5.0"
 ##⬆= "8.6.0-alpha06"
 ##⬆= "8.6.0-alpha07"
 ##⬆= "8.6.0-alpha08"
+##⬆= "8.6.0-beta01"
 duckdb_jdbc = "1.0.0"
 kotlin = "2.0.0"
+##  ⬆ = "2.0.10-RC"
 ##  ⬆ = "2.0.20-Beta1"
+##  ⬆ = "2.0.20-Beta2"
 io-kvision = "7.4.5"
 flyway = "10.13.0"
 xtrasPackage = "org.danbrough.xtras"
@@ -89,15 +75,12 @@ slf4j-api = "2.0.13"
 slf4j-simple = "2.0.12"
 logback-classic = "1.5.6"
 kotlinx-coroutines = "1.8.1"
-##              ⬆ = "1.9.0-RC"
 ktor = "2.3.12"
 
 kotlinx-datetime = "0.6.0"
 sqldelight = "2.0.2"
 koin-bom = "2.2.0-rc-4"
-klog = "0.0.3-beta01"
-#sqldelight-postgres-native = "0.0.12"
-sqldelight-postgres-native = "0.0.1-beta01"
+klog = "0.0.3-beta02"
 shadow = "8.1.1"
 
 jwks-rsa-version = "0.22.1"
@@ -111,12 +94,8 @@ uiToolingPreviewDesktop = "1.6.7"
 uiToolingPreviewAndroid = "1.6.7"
 clikt = "4.4.0"
 junit = "4.13.2"
-lifecycleRuntimeKtx = "2.8.1"
-##               ⬆ = "2.8.2"
-##               ⬆ = "2.8.3"
-composeBom = "2024.04.01"
-##      ⬆ = "2024.05.00"
-##      ⬆ = "2024.06.00"
+lifecycleRuntimeKtx = "2.8.3"
+composeBom = "2024.06.00"
 
 [libraries]
 
@@ -198,21 +177,10 @@ ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negoti
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm", version.ref = "kotlinx-serialization" }
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
 
-sqldelight-driver-native = { module = "app.cash.sqldelight:native-driver", version.ref = "sqldelight" }
-sqldelight-runtime = { module = "app.cash.sqldelight:runtime", version.ref = "sqldelight" }
-sqldelight-driver-sqlite = { module = "app.cash.sqldelight:sqlite-driver", version.ref = "sqldelight" }
-sqldelight-driver-jdbc = { module = "app.cash.sqldelight:jdbc-driver", version.ref = "sqldelight" }
-sqldelight-dialect-postgres = { module = "app.cash.sqldelight:postgresql-dialect", version.ref = "sqldelight" }
-sqldelight-coroutines = { module = "app.cash.sqldelight:coroutines-extensions", version.ref = "sqldelight" }
-
-postgresql-jdbc = { module = "org.postgresql:postgresql", version.ref = "clikt" }
 clikt = { module = "com.github.ajalt.clikt:clikt", version = "4.4.0" }
 clikt-linuxx64 = { module = "com.github.ajalt.clikt:clikt-linuxx64", version.ref = "clikt" }
 clikt-macosx64 = { module = "com.github.ajalt.clikt:clikt-macosx64", version.ref = "clikt" }
 clikt-macosarm64 = { module = "com.github.ajalt.clikt:clikt-macosarm64", version.ref = "clikt" }
-
-sqldelight-postgres-native-driver = { module = "org.danbrough:postgres-native-sqldelight-driver", version.ref = "sqldelight-postgres-native" }
-sqldelight-postgres-native-dialect = { module = "org.danbrough:postgres-native-sqldelight-dialect", version.ref = "sqldelight-postgres-native" }
 
 koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin-bom" }
 koin-core = { module = "io.insert-koin:koin-core" }
