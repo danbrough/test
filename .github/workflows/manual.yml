@@ -29,6 +29,12 @@ jobs:
         run: |
           echo "doing something on $(date) at $(pwd)" >> build.log
           cat build.log
+      - name: Do Something2
+        shell: bash
+        run: |
+          echo doing something2
+          ls -al
+          
 
   # This workflow contains a single job called "greet"
   greet:
@@ -40,4 +46,8 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: Send greeting
-        run: echo "Hello ${{ inputs.name }} at `date`"
+        run: |
+          echo "Hello ${{ inputs.name }} at `date`"
+          ls -l
+          
+        

@@ -1,0 +1,12 @@
+name: "Example"
+description: "Receives file and generates output"
+inputs:
+  file-path: # id of input
+    description: "Path to test script"
+    required: true
+    default: "test-file.js"
+runs:
+outputs:
+  results-file: # id of output
+    value: "default/path"
+    description: "Path to results file"
